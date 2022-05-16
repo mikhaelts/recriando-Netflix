@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix </title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- nav -->
+    <div id="nav" class="nav">
+      <img class="nav__logo" src="images/netflix-logo.png" alt="" />
+      <img class="nav__avatar" src="images/netflix-avatar.png" alt="" />
+      <nav class="navegacao">
+        <a href="#" >Inicio</a>
+        <a href="#series" >Séries</a>
+        <a href="#filmes">Filmes</a>
+        <a href="#documentarios">Documentários</a>
+    </nav>
+    </div>
+    
+
+    <!-- header -->
+    <header class="banner">
+      <div class="banner__contents">
+        <h1 class="banner__title">LA CASA DE PAPEL</h1>
+        <div class="banner__buttons">
+          <a href="video.mp4"><button class="banner__button">ASSISTR</button></a>
+          <button class="banner__button">MINHA LISTA</button>
+        </div>
+        <h1 class="banner__description">
+          Na série La Casa de Papel, da Netflix, nove habilidosos ladrões, se trancam na Casa da Moeda da Espanha, com o ambicioso plano de realizar o maior roubo da história...
+        </h1>
+      </div>
+      <div class="banner--fadeBottom"></div>
+    </header>
+
+    <!-- Netflix Originals -->
+    <div class="row">
+      <h2>NETFLIX ORIGINALS</h2>
+      <div class="row__posters">
+        <img class="row__poster row__posterLarge" src="images/large-movie1.jpg" alt="" />
+
+        <img class="row__poster row__posterLarge" src="images/large-movie2.jpg" alt="" />
+
+        <img class="row__poster row__posterLarge" src="images/large-movie3.jpg" alt="" />
+
+        <img class="row__poster row__posterLarge" src="images/large-movie4.jpg" alt="" />
+
+        <img class="row__poster row__posterLarge" src="images/large-movie5.jpg" alt="" />
+
+        <img class="row__poster row__posterLarge" src="images/large-movie6.jpg" alt="" />
+
+        <img class="row__poster row__posterLarge" src="images/large-movie7.jpg" alt="" />
+
+        <img class="row__poster row__posterLarge" src="images/large-movie8.jpg" alt="" />
+
+        <img class="row__poster row__posterLarge" src="images/capaguerra7.jpg" alt="" />
+
+        <img class="row__poster row__posterLarge" src="images/capaguerra5.jpg" alt="" />
+      </div>
+    </div>
+
+    <div class="row">
+      <h2>AÇÃO</h2>
+      <div class="row__posters">
+        <img class="row__poster row__posterLarge" src="images/capa1.jpg" alt="" />
+
+        <img class="row__poster row__posterLarge" src="images/capa2.jpg" alt="" />
+
+        <img class="row__poster row__posterLarge" src="images/capa3.jpg" alt="" />
+
+        <img class="row__poster row__posterLarge" src="images/capa4.jpg" alt="" />
+
+        <img class="row__poster row__posterLarge" src="images/capa5.jpg" alt="" />
+
+        <img class="row__poster row__posterLarge" src="images/capa6.jpg" alt="" />
+
+        <img class="row__poster row__posterLarge" src="images/capa9.jpg" alt="" />
+
+        <img class="row__poster row__posterLarge" src="images/CAPA10.jpg" alt="" />
+
+        <img class="row__poster row__posterLarge" src="images/capaguerra5.jpg" alt="" />
+
+        <img class="row__poster row__posterLarge" src="images/capaguerra3.jpg" alt="" />
+      </div>
+    </div>
+
+    <div class="row">
+      <h2>ANIMAÇÃO</h2>
+      <div class="row__posters">
+        <img class="row__poster row__posterLarge" src="images/desenho.jpg" alt="" />
+
+        <img class="row__poster row__posterLarge" src="images/desenho1.jpg" alt="" />
+
+        <img class="row__poster row__posterLarge" src="images/desenho2.jpg" alt="" />
+
+        <img class="row__poster row__posterLarge" src="images/desenho4.jpg" alt="" />
+
+        <img class="row__poster row__posterLarge" src="images/desenho5.jpg" alt="" />
+
+        <img class="row__poster row__posterLarge" src="images/desenho6.jpg" alt="" />
+
+        <img class="row__poster row__posterLarge" src="images/desenho7.jpg" alt="" />
+
+        <img class="row__poster row__posterLarge" src="images/desenho8.png" alt="" />
+
+        <img class="row__poster row__posterLarge" src="images/desenho9.jpg" alt="" />
+
+        <img class="row__poster row__posterLarge" src="images/desenho10.jpg" alt="" />
+      </div>
+    </div>
+
+    <div class="row">
+      <h2>SUSPENSE</h2>
+      <div class="row__posters">
+        <img class="row__poster row__posterLarge" src="images/suspense1.jpg" alt="" />
+
+        <img class="row__poster row__posterLarge" src="/images/suspense2.jpg" alt="" />
+
+        <img class="row__poster row__posterLarge" src="images/suspense3.jpg" alt="" />
+
+        <img class="row__poster row__posterLarge" src="images/suspense4.jpg" alt="" />
+
+        <img class="row__poster row__posterLarge" src="images/suspense5.jpg" alt="" />
+
+        <img class="row__poster row__posterLarge" src="images/suspense6.jpg" alt="" />
+
+        <img class="row__poster row__posterLarge" src="images/suspense7.jpg" alt="" />
+
+        <img class="row__poster row__posterLarge" src="images/suspense8.jpg" alt="" />
+
+        <img class="row__poster row__posterLarge" src="images/suspense9.jpg" alt="" />
+
+      </div>
+    </div>
+
+      <div class="roda">
+        <footer class="roda-pe">&copy;Copyright Mikhael</footer>
+
+      </div>
+    
+    
+
+    <script>
+      const nav = document.getElementById('nav');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY >= 100) {
+          nav.classList.add('nav__black');
+        } else {
+          nav.classList.remove('nav__black');
+        }
+      });
+    </script>
+  </body>
+</html>
